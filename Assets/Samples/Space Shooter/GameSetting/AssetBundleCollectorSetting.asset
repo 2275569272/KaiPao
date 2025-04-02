@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
+  m_Name: AssetBundleCollectorSetting
+  m_EditorClassIdentifier: 
+  ShowPackageView: 0
+  ShowEditorAlias: 0
+  UniqueBundleName: 0
+  Packages:
+  - PackageName: DefaultPackage
+    PackageDesc: 
+    EnableAddressable: 1
+    LocationToLower: 0
+    IncludeAssetGUID: 0
+    AutoCollectShaders: 1
+    IgnoreRuleName: NormalIgnoreRule
+    Groups:
+    - GroupName: scene
+      GroupDesc: "\u573A\u666F"
+      AssetTags: scene
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Samples/Space Shooter/GameRes/Scenes
+        CollectorGUID: a0a73384d18175c46a8d48d8be51fb62
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Samples/Space Shooter/GameRes/Animations
+        CollectorGUID: 8fd2be455c8b3944688bb131427d6df5
+        CollectorType: 2
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Samples/Space Shooter/GameRes/Font
+        CollectorGUID: 46757d5f244baed4d8eec62db88e91ff
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Samples/Space Shooter/GameRes/Prefabs
+        CollectorGUID: 5e1f697f30304834ba3e9ad8223c1eb9
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Samples/Space Shooter/GameRes/Sprites
+        CollectorGUID: 289d6300153ba9841a4d8dd442d84d7c
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: ugui
+      GroupDesc: "\u9762\u677F"
+      AssetTags: ui
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Samples/Space Shooter/GameRes/UIPrefab
+        CollectorGUID: 705efa531b7ee434abae4ec6c8586647
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: player
+      GroupDesc: "\u73A9\u5BB6"
+      AssetTags: prefab
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Samples/Space Shooter/GameRes/Player/Player.prefab
+        CollectorGUID: 2a2addac90ed74fabb168b9cf9fa008c
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Samples/Space Shooter/GameRes/Player/PlayerAnim
+        CollectorGUID: 0fa4942132b7b495eb8a32fe62ab29eb
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
