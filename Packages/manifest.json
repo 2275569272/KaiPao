@@ -7,11 +7,10 @@
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.analytics": "3.8.1",
     "com.unity.collab-proxy": "2.5.2",
-<<<<<<< HEAD
+
     "com.unity.feature.2d": "2.0.0",
-=======
-    "com.unity.feature.2d": "2.0.1",
->>>>>>> 1252191071ee5a70e999deef3fe3cbcf1f0f2bc2
+
+
     "com.unity.ide.rider": "3.0.31",
     "com.unity.ide.visualstudio": "2.0.22",
     "com.unity.ide.vscode": "1.2.5",

@@ -123,7 +123,7 @@ public class UIWindow : MonoBehaviour
         GameObject enemyCreateNode = GameObject.Find("EnemyCreate");
         if (enemyCreateNode == null)
         {
-            Debug.LogError("EnemyCreate node not found in the scene.");
+            //Debug.LogError("EnemyCreate node not found in the scene.");
             return;
         }
 
