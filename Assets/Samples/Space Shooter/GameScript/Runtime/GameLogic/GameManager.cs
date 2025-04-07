@@ -49,8 +49,8 @@ public class GameManager
         string uiName = null;
         if (message is SceneEventDefine.StartingScene)
         {
-            operationHandle = YooAssets.LoadSceneAsync("StartingScene");
-            uiName = "StartPanel";
+            operationHandle = YooAssets.LoadSceneAsync("StartGameScene");
+            uiName = "StartGamePanel";
         }
         else if (message is SceneEventDefine.Scene1_1)
         {
