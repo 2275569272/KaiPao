@@ -49,8 +49,8 @@ public class GameManager
         string uiName = null;
         if (message is SceneEventDefine.StartingScene)
         {
-            operationHandle = YooAssets.LoadSceneAsync("StartingScene");
-            uiName = "StartPanel";
+            operationHandle = YooAssets.LoadSceneAsync("Battle");
+            uiName = "Battle";
         }
         else if (message is SceneEventDefine.Scene1_1)
         {
@@ -63,7 +63,8 @@ public class GameManager
             if (op.Status == EOperationStatus.Succeed)
             {
                 //打开界面
-                UIManager.Instance.OpenWindow(uiName);
+                //    UIManager.Instance.OpenWindow(uiName);
+                Debug.Log("打开界面");
             }
             else
             {

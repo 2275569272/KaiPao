@@ -17,8 +17,16 @@ public class UIWindow : MonoBehaviour
     public ControlBase control; //这个窗口的control脚本
     CanvasGroup canvasGroup;
 
+    public List<GameObject> enemyPrefabs;
+
+    void Start()
+    {
+        Init();
+        StartSpawningEnemies();
+    }
+
     /// <summary>
-    /// 初始化mvc三个脚本 相当于执行了mvc三个脚本的Awack
+    /// 初始化mvc三个脚本 相当于执行了mvc三个脚本的Awake
     /// </summary>
     public void Init()
     {
@@ -27,7 +35,7 @@ public class UIWindow : MonoBehaviour
             Debug.Log("当前UI没有挂载CanvasGroup脚本");
         if (model != null)
             model.Init(this);
-        if (view != null) 
+        if (view != null)
             view.Init(this);
         if (control != null)
             control.Init(this);
@@ -47,7 +55,7 @@ public class UIWindow : MonoBehaviour
     }
 
     /// <summary>
-    /// mvc三个脚本的OnDestory
+    /// mvc三个脚本的OnDestroy
     /// </summary>
     public void Destory()
     {
@@ -86,4 +94,45 @@ public class UIWindow : MonoBehaviour
         transform.SetAsLastSibling();
         Show();
     }
+
+    /// <summary>
+    /// 启动敌人生成协程
+    /// </summary>
+    public void StartSpawningEnemies()
+    {
+        StartCoroutine(SpawnEnemyWaves());
+    }
+
+    /// <summary>
+    /// 每过十秒生成一波敌人
+    /// </summary>
+    private IEnumerator SpawnEnemyWaves()
+    {
+        while (true)
+        {
+            SpawnDifferentEnemies();
+            yield return new WaitForSeconds(10f);
+        }
+    }
+
+    /// <summary>
+    /// 在EnemyCreate空节点中生成不同的敌人
+    /// </summary>
+    private void SpawnDifferentEnemies()
+    {
+        GameObject enemyCreateNode = GameObject.Find("EnemyCreate");
+        if (enemyCreateNode == null)
+        {
+            Debug.LogError("EnemyCreate node not found in the scene.");
+            return;
+        }
+
+        for (int i = 0; i < enemyPrefabs.Count; i++)
+        {
+            GameObject enemy = GameObject.Instantiate(enemyPrefabs[i], enemyCreateNode.transform);
+           // enemy.transform.position = new Vector3(i * 2.0f, 0, 0); // 设置敌人的位置
+            enemy.transform.localScale = new Vector3(50, 50, 1); // 设置敌人的大小
+        }
+    }
 }
+
