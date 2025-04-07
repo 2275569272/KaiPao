@@ -13,11 +13,27 @@
       "url": "https://package.openupm.com"
     },
     "com.unity.2d.animation": {
+<<<<<<< HEAD
       "version": "9.1.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.2d.common": "8.0.2",
+=======
+<<<<<<< HEAD
+      "version": "9.1.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.common": "8.0.2",
+=======
+      "version": "9.1.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.common": "8.0.3",
+>>>>>>> 1252191071ee5a70e999deef3fe3cbcf1f0f2bc2
+>>>>>>> 3903b806aabdd7ada6665ed49d15cb118b9553ac
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.collections": "1.1.0",
         "com.unity.modules.animation": "1.0.0",
@@ -26,7 +42,15 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.2d.aseprite": {
+<<<<<<< HEAD
       "version": "1.1.4",
+=======
+<<<<<<< HEAD
+      "version": "1.1.2",
+=======
+      "version": "1.1.6",
+>>>>>>> 1252191071ee5a70e999deef3fe3cbcf1f0f2bc2
+>>>>>>> 3903b806aabdd7ada6665ed49d15cb118b9553ac
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -38,7 +62,11 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.2d.common": {
+<<<<<<< HEAD
+      "version": "8.0.2",
+=======
       "version": "8.0.3",
+>>>>>>> 1252191071ee5a70e999deef3fe3cbcf1f0f2bc2
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -58,11 +86,19 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.2d.psdimporter": {
+<<<<<<< HEAD
+      "version": "8.0.4",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.animation": "9.1.0",
+=======
       "version": "8.0.5",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.2d.animation": "9.1.1",
+>>>>>>> 1252191071ee5a70e999deef3fe3cbcf1f0f2bc2
         "com.unity.2d.common": "8.0.2",
         "com.unity.2d.sprite": "1.0.0"
       },
@@ -75,12 +111,20 @@
       "dependencies": {}
     },
     "com.unity.2d.spriteshape": {
+<<<<<<< HEAD
+      "version": "9.0.2",
+=======
       "version": "9.0.4",
+>>>>>>> 1252191071ee5a70e999deef3fe3cbcf1f0f2bc2
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.1.0",
+<<<<<<< HEAD
+        "com.unity.2d.common": "8.0.1",
+=======
         "com.unity.2d.common": "8.0.3",
+>>>>>>> 1252191071ee5a70e999deef3fe3cbcf1f0f2bc2
         "com.unity.modules.physics2d": "1.0.0"
       },
       "url": "https://packages.unity.cn"
@@ -135,7 +179,15 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.burst": {
+<<<<<<< HEAD
       "version": "1.8.17",
+=======
+<<<<<<< HEAD
+      "version": "1.8.13",
+=======
+      "version": "1.8.18",
+>>>>>>> 1252191071ee5a70e999deef3fe3cbcf1f0f2bc2
+>>>>>>> 3903b806aabdd7ada6665ed49d15cb118b9553ac
       "depth": 3,
       "source": "registry",
       "dependencies": {
@@ -169,6 +221,20 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.feature.2d": {
+<<<<<<< HEAD
+      "version": "2.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.2d.animation": "9.1.0",
+        "com.unity.2d.pixel-perfect": "5.0.3",
+        "com.unity.2d.psdimporter": "8.0.4",
+        "com.unity.2d.sprite": "1.0.0",
+        "com.unity.2d.spriteshape": "9.0.2",
+        "com.unity.2d.tilemap": "1.0.0",
+        "com.unity.2d.tilemap.extras": "3.1.2",
+        "com.unity.2d.aseprite": "1.1.2"
+=======
       "version": "2.0.1",
       "depth": 0,
       "source": "builtin",
@@ -180,7 +246,12 @@
         "com.unity.2d.spriteshape": "9.0.4",
         "com.unity.2d.tilemap": "1.0.0",
         "com.unity.2d.tilemap.extras": "3.1.2",
+<<<<<<< HEAD
         "com.unity.2d.aseprite": "1.1.4"
+=======
+        "com.unity.2d.aseprite": "1.1.6"
+>>>>>>> 1252191071ee5a70e999deef3fe3cbcf1f0f2bc2
+>>>>>>> 3903b806aabdd7ada6665ed49d15cb118b9553ac
       }
     },
     "com.unity.ide.rider": {
