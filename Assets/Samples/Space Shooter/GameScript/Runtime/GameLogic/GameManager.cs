@@ -49,13 +49,13 @@ public class GameManager
         string uiName = null;
         if (message is SceneEventDefine.StartingScene)
         {
-<<<<<<< HEAD
+//<<<<<<< HEAD
             operationHandle = YooAssets.LoadSceneAsync("StartGameScene");
             uiName = "StartGamePanel";
-=======
-            operationHandle = YooAssets.LoadSceneAsync("Battle");
-            uiName = "Battle";
->>>>>>> 8d3c84d4212065a1ece083619a3c9b21d182047e
+//=======
+//            operationHandle = YooAssets.LoadSceneAsync("Battle");
+//            uiName = "Battle";
+//>>>>>>> 8d3c84d4212065a1ece083619a3c9b21d182047e
         }
         else if (message is SceneEventDefine.Scene1_1)
         {
