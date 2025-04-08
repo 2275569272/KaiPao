@@ -203,7 +203,7 @@ public class UIManager
         {
             ///获取这个ui的名字 如果是GamePanel 得到的结果是Game
             string name = uiName.Replace("Panel", "");
-            GameObject uiPrefab = YooAssets.LoadAssetSync<GameObject>(uiName).AssetObject as GameObject;// Resources.Load<GameObject>(uiPrefabPath + uiName);// Resources.Load<GameObject>(uiPrefabPath + uiName);
+            GameObject uiPrefab = YooAssets.LoadAssetSync<GameObject>(uiName).AssetObject as GameObject;
             if (uiPrefab == null)
             {
                 Debug.Log("资源里没有" + uiName + "这个资源");
