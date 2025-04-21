@@ -19,4 +19,13 @@ public class SceneEventDefine
             UniEvent.SendMessage(msg);
         }
     }
+
+    public class BattleScene : IEventMessage
+    {
+        public static void SendEventMessage()
+        {
+            var msg = new BattleScene();
+            UniEvent.SendMessage(msg);
+        }
+    }
 }
