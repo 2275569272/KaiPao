@@ -29,7 +29,7 @@ public class GameManager
     {
         // 注册监听事件
         _eventGroup.AddListener<SceneEventDefine.StartingScene>(OnHandleEventMessage);
-        _eventGroup.AddListener<SceneEventDefine.Scene1_1>(OnHandleEventMessage);
+        _eventGroup.AddListener<SceneEventDefine.Battle>(OnHandleEventMessage);
     }
 
     /// <summary>
@@ -57,10 +57,10 @@ public class GameManager
             //uiName = "Battle";
 
         }
-        else if (message is SceneEventDefine.Scene1_1)
+        else if (message is SceneEventDefine.Battle)
         {
-            operationHandle = YooAssets.LoadSceneAsync("Scene1_1");
-            uiName = "LoadingPanel";
+            operationHandle = YooAssets.LoadSceneAsync("Battle");
+            uiName = "BattlePanel";
         }
         if (operationHandle == null) return;
         operationHandle.Completed += (op) =>

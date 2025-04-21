@@ -11,11 +11,11 @@ public class SceneEventDefine
         }
     }
 
-    public class Scene1_1 : IEventMessage
+    public class Battle : IEventMessage
     {
         public static void SendEventMessage()
         {
-            var msg = new Scene1_1();
+            var msg = new Battle();
             UniEvent.SendMessage(msg);
         }
     }

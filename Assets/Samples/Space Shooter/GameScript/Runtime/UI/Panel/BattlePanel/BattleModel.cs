@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattleModel : MonoBehaviour
+public class BattleModel : ModelBase
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Init(UIWindow uiBase)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.Init(uiBase);
+        Debug.Log("BattleModel Init");
     }
 }

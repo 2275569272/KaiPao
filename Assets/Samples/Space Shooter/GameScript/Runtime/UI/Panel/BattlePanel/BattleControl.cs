@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class BattleControl : ControlBase
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Init(UIWindow uiBase)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.Init(uiBase);
+        Debug.Log("BattleControl Init");
     }
 }
